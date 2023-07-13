@@ -12,27 +12,57 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <div class="border">
-      <span class="text">Register With Us</span>
-      <form>
-        <span class="text">Username</span>
-        <input class="form-control" type="text" placeholder="Enter username" />
-        <span class="text">Email</span>
-        <input type="email" class="form-control" placeholder="Enter email" />
-        <span class="text">Password</span>
-        <input
-          type="password"
-          class="form-control"
-          placeholder="Enter password"
-        />
-        <span class="text">Confirm Password</span>
-        <input
-          type="password"
-          class="form-control"
-          placeholder="Enter password again"
-        />
-        <button type="button" class="btn btn-primary">Submit</button>
-      </form>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <span class="text-center">Register With Us</span>
+        <form class="form" onsubmit="isFormValidate(); return false">
+          <div class="md-7">
+            <label class="text">Username</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Enter username"
+              id="username"
+            />
+            <div class="invalid-feedback">
+              Username must be at least 3 characters
+            </div>
+          </div>
+          <div class="md-7">
+            <label class="text">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter email"
+              id="email"
+            />
+            <div class="invalid-feedback">Email is not valid</div>
+          </div>
+          <div class="md-7">
+            <label class="text">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Enter password"
+              id="password"
+            />
+            <span class="invalid-feedback"
+              >Password must be at least 6 characters</span
+            >
+          </div>
+          <div class="md-7">
+            <label class="text">Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Enter password again"
+              id="confirmpassword"
+            />
+            <label class="invalid-feedback" id="confirmvalidtext">Password2 is required</label>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   </body>
   <script src="../Javascript/main.js"></script>
