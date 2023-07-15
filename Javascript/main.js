@@ -4,6 +4,9 @@ var password = document.getElementById("password");
 var confirmpassword = document.getElementById("confirmpassword");
 var confirmvalidtext = document.getElementById("confirmvalidtext");
 
+var mailregex =
+  /^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/;
+
 //入力された内容が正しいか確認を行う
 function isFormValidate() {
   //ユーザー名
@@ -15,7 +18,7 @@ function isFormValidate() {
   }
 
   //メールアドレス
-  if (!email.value.match(/.+@.+\..+/) || email.value.length < 0) {
+  if (!email.value.match(mailregex) || email.value.length < 0) {
     email.classList.add("is-invalid");
   } else {
     email.classList.remove("is-invalid");
