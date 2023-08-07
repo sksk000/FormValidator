@@ -2,7 +2,7 @@
 - HTML/CSS/Javascriptを勉強するため、[vanillawebprojects](https://vanillawebprojects.com/)にあるサイトを模写しました。
 - 各入力欄に正しい文字列が入っているか確認します。
 ## デモ
-![FormValidator](https://github.com/sksk000/FormValidator/assets/137740372/f5792780-76cc-46ae-b31c-05ed4654e050)
+![FormValidator](https://github.com/sksk000/FormValidator/assets/137740372/bb244b83-9da1-4631-9a2a-5ebc8386e114)
 
 ### 模倣したサイト
 https://vanillawebprojects.com/projects/form-validator/
@@ -19,6 +19,8 @@ https://vanillawebprojects.com/projects/form-validator/
   - Confirm Password
     - Passwordで入力した文字列と同じか確認しています。
 
+## Github Pages URL
+- https://sksk000.github.io/FormValidator/
 
 ## 使用言語とライブラリ
 ### 言語
